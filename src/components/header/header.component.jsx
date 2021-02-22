@@ -1,16 +1,17 @@
 import React from 'react';
 
 import {Link} from 'react-router-dom';
+import {auth} from '../../firebase/firebase.utils';
 
 
 
 
 
 
-function Pageheader(){
+const Pageheader = ({currentUser})=>{
     return(
      <div>
-        <nav className="navbar navbar-expand-md  bg-secondary navbar-dark">
+        <nav className="navbar navbar-expand-md bg-secondary navbar-dark sticky-top">
         
         <Link  className="navbar-brand"  to='/'> Home</Link>
         
@@ -18,21 +19,29 @@ function Pageheader(){
             <span className="navbar-toggler-icon"></span>
             </button>
             
-            <div className="collapse navbar-collapse" id="collapsibleNavbar">
+            <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
           
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ">
               
-              <li className="nav-item  ">
+              <li className="nav-item ">
               <Link className="nav-link" to='/'>About Me</Link>
             </li>
-            
-          <li className="nav-item  ">
-              <Link className="nav-link" to='/signin'>Login </Link>
+            <li className="nav-item ">
+              <Link className="nav-link" to='/buildresume'>Build My Resume</Link>
             </li>
             
-
-          </ul>
+           
+              {
+                
+                currentUser?
+                <Link className="nav-link" onClick={()=>auth.signOut()}>Log Out </Link>
+                :
+                <Link className="nav-link" to='/signin'>Log In </Link>
+              
+              }
+              </ul>
           </div>  
+        
         </nav>
         
   

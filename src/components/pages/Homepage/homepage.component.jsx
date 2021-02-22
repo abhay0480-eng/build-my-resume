@@ -1,8 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import './homepage.styles.css';
 
 
 
@@ -17,16 +14,18 @@ class Homepage extends React.Component{
     render(){
         return(
             <div>
-                <Jumbotron fluid>
-  <Container>
-    <h1 className="text-center font-weight-bolder">Build Your Resume </h1>
-  </Container>
-</Jumbotron>
-<div className="container">
-    
-</div>
+                <section className="container-fluid">
+                <h1 className="text-center  display-4">Build Your Resume </h1>
+                </section>
+                <section>
+                    <h2>abhay</h2>
+                </section>
+                <section>
+                    <h3> ahsvcjhv</h3>
+                </section>
 
             </div>
+            
         )
     }
 }
