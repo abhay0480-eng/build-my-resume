@@ -5,6 +5,7 @@ import exp from '../../../assets/experience.jpg';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
+import {Link} from 'react-router-dom';
 
 class BuildResume extends React.Component{
     render(){
@@ -17,7 +18,8 @@ class BuildResume extends React.Component{
                 <div class="card-body">
     <h4 class="card-title">For Fresher</h4>
     <p class="card-text">Build your Resume As a Fresher</p>
-    <a href="#" class="btn btn-primary">Click Here To Build</a>
+    <Link to='/userform' class="btn btn-primary">click here To Build</Link> 
+    
   </div>
             </div>
                     </Col>
