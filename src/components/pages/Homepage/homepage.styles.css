@@ -1,3 +1,47 @@
-section{
-    height:200px;
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;900&display=swap');
+
+
+.homepage{
+    height:100%;
+    background-color: #e7e7de;
+    margin-top:56px;
+}
+
+.section1{
+    height:300px;
+   padding: 20px 0px 0px 0px;
+   background-color: rgb(176, 184, 184);
+
+}
+.fontStyle{
+    font-family: 'Comfortaa', cursive;
+    color:#0f3057;
+    padding-top:20px;
+    font-size: 60px;
+  
+}
+.btn-secondary{
+    background-color: #0f3057 !important;
+    border-color: #0f3057 !important;
+   color: #e7e7de !important;
+    margin-top: 20px;
+   
+ }
+.btn-secondary:hover{
+    background-color: #e7e7de!important;
+    border-color: #0f3057 !important;
+   color:#0f3057 !important;
+    
+}
+
+.link{
+text-decoration: none;
+}
+.link:hover{
+    text-decoration: none;
+    }
+
+h6{
+    font-family: 'Comfortaa', cursive;
 }

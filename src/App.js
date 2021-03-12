@@ -39,10 +39,10 @@ class App extends React.Component{
         <Pageheader currentUser={this.state.currentUser}/>
         <Switch>
         
-        <Route exact path='/' component={Homepage} />
-        <Route  path='/signin' component={SignInPage} />
+        <Route exact path='/'       component={Homepage} />
+        <Route  path='/signin'      component={SignInPage} />
         <Route  path='/buildresume' component={BuildResume}/>
-        <Route path='/userform' component={UserForm}/>
+        <Route  path='/userform'    component={UserForm}/>
         
       
         </Switch>
