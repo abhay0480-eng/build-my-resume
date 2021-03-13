@@ -11,6 +11,9 @@ class PersonalDetails extends React.Component {
     render() {
         const {values, handleChange } = this.props;
         return (
+            <div className="container">
+
+           
             <MuiThemeProvider>
                 <React.Fragment>
                     <TextField
@@ -89,6 +92,7 @@ class PersonalDetails extends React.Component {
                     />
                 </React.Fragment>
             </MuiThemeProvider>
+            </div>
            
         )
     }

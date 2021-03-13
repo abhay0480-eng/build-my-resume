@@ -3,24 +3,30 @@
 
 
 .homepage{
-    height:100%;
-    background-color: #e7e7de;
-    margin-top:56px;
+   margin: 57px 0px 0px 0px;
+  
+   
 }
 
 .section1{
     height:300px;
    padding: 20px 0px 0px 0px;
-   background-color: rgb(176, 184, 184);
-
 }
+
 .fontStyle{
     font-family: 'Comfortaa', cursive;
     color:#0f3057;
     padding-top:20px;
-    font-size: 60px;
-  
-}
+    font-size: 40px;
+    }
+
+    @media (min-width: 400px) {
+
+        .fontStyle{
+            font-size: 60px;
+        }
+     }
+
 .btn-secondary{
     background-color: #0f3057 !important;
     border-color: #0f3057 !important;
@@ -45,3 +51,27 @@ text-decoration: none;
 h6{
     font-family: 'Comfortaa', cursive;
 }
+
+img{
+    margin-top: 20px;
+    
+}
+@media (min-width: 992px) {
+    .section-4{
+    
+        background-color: #00587a;
+        height:400px;
+        position: relative;
+        bottom: 320px;
+        font-family: 'Comfortaa', cursive;
+        color:  #e7e7de;
+      }
+}
+.section-4{
+    margin-top: 20px;
+    background-color: #00587a;
+    height:300px;
+    font-family: 'Comfortaa', cursive;
+    color:  #e7e7de;
+  }
+

@@ -1,7 +1,8 @@
+import { Container } from '@material-ui/core';
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Col, Row } from 'react-bootstrap';
+
+
 
 class CreateResume extends React.Component {
 

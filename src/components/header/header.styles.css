@@ -1,23 +1,4 @@
-.navbar{
-    background-color:#008891;
-   
-}
-.navbar-brand{
-    color:#0f3057;
-    font-weight:bolder;
-    font-size: 40px;
-}
-.nav-link{
-    color:#0f3057;
-    font-weight:bold;
-    font-size: 15px;
-}
-.nav-link:hover{
-    color:#e7e7de;
-}
-.navbar-brand:hover{
-    color:#e7e7de;
-}
+
 .btn-primary{
     background-color: #0f3057 !important;
     border-color: #0f3057 !important;
@@ -28,6 +9,6 @@
     border-color:#e7e7de  !important;
     color: #0f3057 !important;
 }
-.navbar-toggler{
-    color: #0f3057;
+.navbar{
+    background-color: #008891;
 }

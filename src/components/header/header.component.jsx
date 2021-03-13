@@ -1,27 +1,24 @@
 import React from 'react';
-
 import {signInWithGoogle} from '../../firebase/firebase.utils';
 import {Link} from 'react-router-dom';
 import {auth} from '../../firebase/firebase.utils';
 import './header.styles.css';
 
-
 const Pageheader = ({currentUser}) => {
-    return (
+    return(
         <div>
-            <nav className="navbar navbar-expand-md fixed-top">
-
-                <Link className="navbar-brand" to='/'>
-                     Resume Builder
-                </Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#collapsibleNavbar">
-                    <span className="navbar-toggler-icon"/>
-                </button>
-                <div className="collapse navbar-collapse" id="collapsibleNavbar">
-                    
-                    <ul className="nav navbar-nav ml-auto">
-                        <li>
+            <nav class="navbar navbar-light navbar-expand-sm  fixed-top">
+                <div class="container-fluid">
+                    <Link className="navbar-brand" to='/'>
+                        Resume Builder
+                    </Link>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item ">
+      
                             {
                                 currentUser ?
                                     <a className="nav-link pull-right" onClick={() => auth.signOut()}>Log Out</a>
@@ -29,11 +26,13 @@ const Pageheader = ({currentUser}) => {
                                     <button type="button" className="btn  btn-primary" onClick={signInWithGoogle}>Sign In</button>
                             }
                         </li>
-                    </ul>
+       
+        </ul>
+        </div>
                 </div>
             </nav>
+
         </div>
     )
 }
-
 export default Pageheader;
