@@ -71,7 +71,7 @@ function Homepage() {
             <footer className="row  justify-content-center">
                     
                     <div className="col-sm-12  " >
-                    <p className="text-center">Contact with us on Social Media</p>
+                    <p className="text-center h3 ">Contact with us on Social Media</p>
                     <div className="align-items-center justify-content-center d-flex">
                     <a class=" facebook btn m-1 btn-floating rounded-circle" role="button" href="https://www.facebook.com" ><FaFacebookF color="white"/></a>
                     <a class=" google btn m-1 btn-floating rounded-circle " href="https://www.google.com" ><FaGoogle color="white"/></a>

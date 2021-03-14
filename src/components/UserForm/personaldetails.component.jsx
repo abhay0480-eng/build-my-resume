@@ -2,6 +2,7 @@ import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import './form.css';
 
 class PersonalDetails extends React.Component {
     continue = e => {
@@ -11,11 +12,12 @@ class PersonalDetails extends React.Component {
     render() {
         const {values, handleChange } = this.props;
         return (
-            <div className="container">
+            <div className="container ">
 
-           
+           <form>
             <MuiThemeProvider>
                 <React.Fragment>
+                    <h1>Personal Details: </h1>
                     <TextField
                     hintText="Enter your First Name"
                     floatingLabelText="First Name"
@@ -92,6 +94,7 @@ class PersonalDetails extends React.Component {
                     />
                 </React.Fragment>
             </MuiThemeProvider>
+            </form>
             </div>
            
         )

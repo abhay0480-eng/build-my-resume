@@ -16,8 +16,10 @@ class UserEducation extends React.Component {
     render() {
         const {values, handleChange}= this.props;
         return (
+            <form>
             <MuiThemeProvider>
                 <React.Fragment>
+                <h1>Education: </h1>
                     <TextField
                     hintText="Enter your School/College Name"
                     floatingLabelText="School/College"
@@ -82,6 +84,7 @@ class UserEducation extends React.Component {
                     />
                 </React.Fragment>
             </MuiThemeProvider>
+            </form>
            
         )
     }

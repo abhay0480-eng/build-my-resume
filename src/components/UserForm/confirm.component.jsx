@@ -37,8 +37,10 @@ class Skills extends React.Component {
              jobCity,
              experienceYear}}= this.props;
         return (
+            <form>
             <MuiThemeProvider>
                 <React.Fragment>
+                <h1>Confirm Details: </h1>
                     <List>
                         <ListItem
                         primaryText="First Name"
@@ -143,6 +145,7 @@ class Skills extends React.Component {
                     />
                 </React.Fragment>
             </MuiThemeProvider>
+            </form>
            
         )
     }
