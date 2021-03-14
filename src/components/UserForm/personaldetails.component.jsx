@@ -2,6 +2,7 @@ import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+
 import './form.css';
 
 class PersonalDetails extends React.Component {
@@ -9,21 +10,27 @@ class PersonalDetails extends React.Component {
         e.preventDefault();
         this.props.nextSteps();
     }
+    
     render() {
+        
+        
         const {values, handleChange } = this.props;
         return (
             <div className="container ">
 
            <form>
-            <MuiThemeProvider>
-                <React.Fragment>
+           <MuiThemeProvider>
+                
                     <h1>Personal Details: </h1>
                     <TextField
                     hintText="Enter your First Name"
                     floatingLabelText="First Name"
                     style = {styles.button}
+                  
                     onChange={handleChange('firstName')}
                     defaultValue={values.firstName}
+                   
+                    
                     />
                     <TextField
                     hintText="Enter your Last Name"
@@ -92,7 +99,7 @@ class PersonalDetails extends React.Component {
                     style = {styles.button}
                     onClick={this.continue}
                     />
-                </React.Fragment>
+                
             </MuiThemeProvider>
             </form>
             </div>

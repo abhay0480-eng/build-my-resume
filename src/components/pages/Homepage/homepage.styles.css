@@ -15,7 +15,7 @@
 
 .fontStyle{
     font-family: 'Comfortaa', cursive;
-    color:#0f3057;
+    color:#1b262c;
     padding-top:20px;
     font-size: 40px;
     }
@@ -28,16 +28,16 @@
      }
 
 .btn-secondary{
-    background-color: #0f3057 !important;
-    border-color: #0f3057 !important;
-   color: #e7e7de !important;
+    background-color: #1b262c !important;
+    border-color: #1b262c !important;
+   color: #bbe1fa !important;
     margin-top: 20px;
+    box-shadow: 0px 0px 14px -4px  #1b262c;
    
  }
 .btn-secondary:hover{
-    background-color: #e7e7de!important;
-    border-color: #0f3057 !important;
-   color:#0f3057 !important;
+opacity: 0.8;
+  
     
 }
 
@@ -59,7 +59,7 @@ h6{
 @media (min-width: 992px) {
     .section-4{
     
-        background-color: #00587a;
+        background-color: #0f4c75;
        
         
        
@@ -67,16 +67,17 @@ h6{
         color:  #e7e7de;
       }
       .section-5{
-          background-color:#e7e7de;
+          background-color:#bbe1fa;
          height:600px;
           color:#0f3057;
           font-family: 'Comfortaa', cursive;
          
       }
       footer{
-          background-color: #008891;
+          background-color: #1b262c;
           height: 200px;
           font-family: 'Comfortaa', cursive;
+          color: #e7e7de;
           
           font-weight: 1000px;
 
@@ -85,10 +86,10 @@ h6{
     }
 .section-4{
  
-    background-color: #00587a;
+    background-color: #0f4c75;
     height:300px;
     font-family: 'Comfortaa', cursive;
-    color:  #e7e7de;
+    color:  #ffffff;
   }
   .facebook{
       background-color: #3b5998;

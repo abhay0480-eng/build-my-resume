@@ -1,14 +1,16 @@
 
 .btn-primary{
-    background-color: #0f3057 !important;
-    border-color: #0f3057 !important;
-    color:#e7e7de !important;
+    background-color: #bbe1fa !important;
+    border-color: #bbe1fa !important;
+    color:#1b262c !important;
 }
 .btn-primary:hover{
-    background-color: #e7e7de!important;
-    border-color:#e7e7de  !important;
+    opacity: 0.7;
     color: #0f3057 !important;
 }
 .navbar{
-    background-color: #008891;
+    background-color: #1b262c;
+}
+.navbar-brand{
+    color:#bbe1fa !important;
 }
