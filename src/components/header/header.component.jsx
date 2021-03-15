@@ -21,7 +21,7 @@ const Pageheader = ({currentUser}) => {
       
                             {
                                 currentUser ?
-                                    <a className="nav-link pull-right" onClick={() => auth.signOut()}>Log Out</a>
+                                <button type="button" className="btn  btn-primary" onClick={() => auth.signOut()}>Log Out</button>
                                     :
                                     <button type="button" className="btn  btn-primary" onClick={signInWithGoogle}>Sign In</button>
                             }
